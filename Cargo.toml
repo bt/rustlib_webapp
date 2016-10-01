@@ -1,0 +1,25 @@
+[package]
+name = "webapp"
+version = "0.1.0"
+authors = ["Bertram Truong <b@bertramtruong.com>"]
+
+[[bin]]
+name = "example-simple"
+path = "examples/simple.rs"
+test = false
+doc = false
+bench = false
+
+[lib]
+name = "webapp"
+path = "src/lib.rs"
+
+[dependencies]
+hyper = "*"
+iron = "0.4.0"
+staticfile = "*"
+router = "*"
+mount = "*"
+
+[dev-dependencies]
+stainless = "*"
